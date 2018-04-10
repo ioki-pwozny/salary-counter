@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Salary App</title>
+        <script src="script.js"></script>
+        <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            width: 100vw;
+        }
+        #salary{
+            width: 300px;
+        }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="updateSalaryInfo(event)">
+            <fieldset>
+                    <label id="currentSalary"></label>
+                    <input placeholder="monthly salary e.g. 1234.54 (dot notation)" type="number" id="salary"/>
+                    <input placeholder="daily start time e.g. 6:30" type="text" />
+                    <button type="submit">update</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
